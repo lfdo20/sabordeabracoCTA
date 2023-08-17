@@ -2,15 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="../src/images/favicon.svg" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Sabor de Abraço Brownie</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body class="font-inter antialiased text-gray-900 tracking-tight">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      document.onscroll = function () {
+          document.getElementById("wppclose").style.opacity = window.innerHeight + window.scrollY < (document.body.clientHeight-200) ? '1' : '0';
+        }
+    </script>
+    <!-- script>window.rwbp={email:'sabordeabracobsb@gmail.com',phone:'5561994625455',message:'Peça já o seu.',lang:'pt-BR'}</script><script defer async src='https://duz4dqsaqembt.cloudfront.net/client/whats.js'></script>
+    -->
   </body>
 </html>

@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=fallback');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+@import url('https://fonts.cdnfonts.com/css/ballet-harmony');
+@import url('https://fonts.cdnfonts.com/css/belinda-carolyne');
+@import url('https://fonts.cdnfonts.com/css/museo');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+/*
+font-family: 'Ballet Harmony', sans-serif;
+font-family: 'Lobster Two', cursive;
+font-family: 'Belinda Carolyne', sans-serif;
+font-family: 'Museo', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+
+@import "./node_modules/tailwindcss/base.css";
+@import './node_modules/tailwindcss/components';
+@import './src/css-styles/utility-patterns.css';
+@import './src/css-styles/range-slider.css';
+@import './src/css-styles/toggle-switch.css';
+@import './src/css-styles/theme.css';
+/*
+*/
+@import './node_modules/tailwindcss/utilities';
+
+@layer utilities {
+	.rtl {
+		direction: rtl;
+	}
+}
+
+/* See Alpine.js: https://github.com/alpinejs/alpine#x-cloak */
+[x-cloak=""] {
+	display: none;
+}
+
+body {
+	background-image: url('../src/images/fundo3x.webp');
+	background-size: contain;
+}
+
+.bvhid{
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+}
+
+/* for desktop */
+.whatsapp_float {
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	bottom: 40px;
+	right: 40px;
+	color: #FFF;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 30px;
+	box-shadow: 2px 2px 3px #999;
+	z-index: 100;
+}
+
+.whatsapp-icon {
+	margin-top: 16px;
+}
+
+.strkfont {
+	-webkit-text-stroke-width: .7px;
+}
+
+/* for mobile */
+@media screen and (max-width: 767px) {
+	.whatsapp-icon {
+		margin-top: 10px;
+	}
+
+	.whatsapp_float {
+		width: 40px;
+		height: 40px;
+		bottom: 20px;
+		right: 10px;
+		font-size: 22px;
+	}
+}
